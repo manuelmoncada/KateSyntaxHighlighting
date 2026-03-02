@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Lammps Syntax Highlighting definitions for KDE-Kate editor
-     First version October 2011 by Alessandro L. Sellerio
+<?xml version="2.0" encoding="UTF-8"?>
+<!-- LIGGGHTS Syntax Highlighting definitions for KDE-Kate editor
+     First version October 2011 by Alessandro L. Sellerio (LAMMMPS)
      Version 1.0 dated 09/01/2012 by Alessandro L. Sellerio
-     Contact the original author at alessandro.sellerio@ieni.cnr.it
      Inspired by original KDE file: bash.xml 
-     Put this file in ~.kde/share/apps/katepart/syntax
-     ~/.local/share/org.kde.syntax-highlighting/syntax/
+     Modified version for LIGGGHTS
+     Version 2.0 dated 02/03/2026 by Manuel Moncada M.
+     Put this file in ~/.local/share/org.kde.syntax-highlighting/syntax/
     -->
     
 <!DOCTYPE language SYSTEM "language.dtd"
