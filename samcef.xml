@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<!--
+  ====================================================================
+  Syntax for the SAMCEF BACON module to be used as highlighting in the KDE Kate editor.
+  ====================================================================
+  Based on a similar file Octave 2.1.64
+ 
+  Created: 16-06-2009
+  ==================
+  18-06-2009: New parameters added, recognizes comments, does not differentiate between lowercase and uppercase (Pedro Zambrano)
+  02-03-2026: New parameters added and minor changes (Manuel Moncada M.)
+  
+  Last modified: 02-03-2026
+
+  Put this file in ~/.local/share/org.kde.syntax-highlighting/syntax/
+-->
+
+
+<language name="Samcef" version="12.1" kateversion="3.2.2" section="Scientific" extensions="*.dat;*.DAT" mimetype="text/samcef" casesensitive="0" license="GPL" author="Emilio Dufeu - Pedro Zambrano">
+
+  <highlighting>
+
+
+  <!-- Comandos Bacon de alto nivel -->
+    <list name="comaltniv">
+      <item> ABRE </item>
+      <item> GRAP </item>
+      <item> INPUT </item>
+      <item> MODE </item>
+      <item> PALETTE </item>
+      <item> TITRE </item>
+    </list>
+
+
+    <!-- Comandos Bacon -->
+    <list name="comandos">
+      <item> AEL </item>
+      <item> ALG </item>
+      <item> AMC </item>
+      <item> ADJ </item>
+      <item> AME </item>
+      <item> AMM </item>
+      <item> ANA </item>
+      <item> APP </item>
+      <item> APS </item>
+      <item> ABR </item>
+      <item> ARC </item>
+      <item> 3ARC </item>
+      <item> ARR </item>
+      <item> AXE </item>
+      <item> AXL </item>
+      <item> BRA </item>
+      <item> BEAM </item>
+      <item> BIR </item>
+      <item> BOR </item>
+      <item> BOX </item>
+      <item> BPR </item>
+      <item> CAM </item>
+      <item> CAP </item>
+      <item> CAS </item>
+      <item> CAT </item>
+      <item> CGR </item>
+      <item> CLE </item>
+      <item> CLI </item>
+      
+      <item> CLT </item>
+      <item> CLU </item>
+      <item> CLX </item>
+      <item> CMA </item>
+      <item> COLLAGE </item>
+      <item> COM </item>
+      <item> CONTOUR </item>
+      <item> COONS </item>
+      <item> COPY </item>
+      <item> CPE </item>
+      <item> CPS </item>
+      <item> CSJ </item>
+      <item> CSU </item>
+      <item> DEI </item>
+      <item> DEL </item>
+      <item> DES </item>
+      <item> DGE </item>
+      <item> DGR </item>
+      <item> DOC </item>
+      <item> DOMAINE </item>
+      <item> DRE </item>
+      <item> DROITE </item>
+      <item> 3DROITE </item>
+      <item> ELL </item>
+      <item> 3ELL </item>
+      <item> ETA </item>
+      <item> EXB </item>
+      <item> EXC </item>
+      <item> EXP </item>
+      <item> EXT </item>
+      <item> FACES </item>
+      <item> FC3 </item>
+      <item> FCT </item>
+      <item> FCU </item>
+      <item> FI2 </item>
+      <item> FI3 </item>
+      <item> FI4 </item>
+      <item> FIA </item>
+      <item> FIC </item>
+      <item> FIN </item>
+      <item> FLS </item>
+      <item> FLU </item>
+      <item> FON </item>
+      <item> FOU </item>
+      <item> FRA </item>
+      <item> FSU </item>
+      <item> GEL </item>
+      <item> GEN </item>
+      <item> GSH </item>
+      <item> GLU </item>
+      <item> GRA </item>
+      <item> HAR </item>
+      <item> HYP </item>
+      <item> INT </item>
+      <item> ITM </item>
+      <item> JER </item>
+      <item> JEU </item>
+      <item> JUM </item>
+      <item> LAM </item>
+      <item> LIA </item>
+      <item> LIG </item>
+      <item> LIM </item>
+      <item> 3LIM </item>
+      <item> LIN </item>
+      <item> LIS </item>
+      <item> MAI </item>
+      <item> MAS </item>
+      <item> MAT </item>
+      <item> MCC </item>
+      <item> MCE </item>
+      <item> MCT </item>
+      <item> MDS </item>
+      <item> MEN </item>
+      <item> MIS </item>
+      <item> MNT </item>
+      <item> MOD </item>
+      <item> MPL </item>
+      <item> MVA </item>
+      <item> NIN </item>
+      <item> NOE </item>
+      <item> NOR </item>
+      <item> NUR </item>
+      <item> OPT </item>
+      <item> PAL </item>
+      <item> PCE </item>
+      <item> PCG </item>
+      <item> PEA </item>
+      <item> PFL </item>
+      <item> PHP </item>
+      <item> PLANE </item>
+      <item> PLI </item>
+      <item> POINT </item>
+      <item> 3POINT </item>
+      <item> PRI </item>
+      <item> PRO </item>
+      <item> PUR </item>
+      <item> RAI </item>
+      <item> RAM </item>
+      <item> R2D </item>
+      <item> R3D </item>
+      <item> RBE </item>
+      <item> RMC </item>
+      <item> REN </item> 
+      <item> RES </item>
+      <item> RET </item>
+      <item> RI2 </item>
+      <item> RSU </item>
+      <item> RULED </item>
+      <item> SAA </item>
+      <item> SAI </item>
+      <item> SAM </item>
+      <item> SAU </item>
+      <item> SDB </item>
+      <item> SEA </item>
+      <item> SEL </item>
+      <item> SEM </item>
+      <item> SLI </item>
+      <item> SMA </item>
+      <item> SPL </item>
+      <item> 3SPL </item>
+      <item> SOD </item>
+      <item> SOL </item>
+      <item> STI </item>
+      <item> STO </item>
+      <item> SUB </item>
+      <item> SUR </item>
+      <item> SYC </item>
+      <item> TFI </item>
+      <item> TOP </item>
+      <item> TUY </item>
+      <item> UNIT </item>
+      <item> USU </item>
+      <item> UVT </item>
+      <item> VER </item>
+      <item> VIF </item>
+      <item> VII </item>
+      <item> VPEAU </item>
+      <item> VRE </item>
+      <item> ZOO </item>
+      <item> ZIG </item>
+
+     </list>
+  
+  
+    <!-- Opciones de comandos Bacon -->
+    <list name="opciones">
+      <item> mat </item>
+      <item> fix </item>
+      <item> cha </item>
+      <item> dep </item>
+      <item> thic </item>
+      <item> genere </item>
+    </list>
+ 
+    
+    <list name="parametros">
+      <item> groupe </item>
+      <item> val </item>
+      <item> comp </item>
+      <item> noe </item>
+      <item> noeuds </item>
+      <item> mai </item>
+      <item> mailles </item>
+      <item> AUTO </item>
+      <item> A </item>
+      <item> DEGRE </item>
+      <item> I </item>
+      <item> GENERE </item>
+
+      <item> LIG </item>
+      <item> LIGN </item>
+      <item> LIGNE </item>
+      <item> LIGNES </item>
+
+      <item> POI </item>
+      <item> POIN </item>
+      <item> POINT </item>
+      <item> POINTS </item>
+
+      <item> input </item>
+
+      <item> X </item>
+      <item> Y </item>
+      <item> Z </item>
+      <item> N </item>
+      <item> NG </item>
+      <item> ABRE </item>
+      <item> EXECUTE </item>
+
+      <item> NOEUDS </item>
+      <item> NOEUD </item>
+      <item> NOEU </item>
+      <item> gtar </item>
+      <item> un2 </item>
+      <item> nlim </item>
+
+      <item> faces </item>
+      <item> transfo </item>
+
+      <item> MAI </item>
+      <item> MAIL </item>
+      <item> MAILL </item>
+      <item> MAILLE </item>
+      <item> MAILLES </item>
+      <item> DEP </item>
+      <item> DEPLACE </item>
+      <item> DX </item>
+      <item> FIX </item>
+      <item> COMP </item>
+      <item> COMPO </item>
+      <item> VAL </item>
+      <item> ANALYTIQUE </item>
+      <item> DIRECTION </item>
+      <item> MOINS </item>
+      <item> OPT </item>
+      <item> TIME </item>
+      <item> PAS </item>
+
+      <item> CREE </item>
+      <item> AXISYM </item>
+      <item> FONCTION </item>
+      <item> NOM </item>
+      <item> VALEURS </item>
+      <item> VALEUR </item>
+      <item> COUPLES </item>
+      <item> abscisses </item>
+      <item> ordonnees </item>
+      <item> U </item>
+      <item> r </item>
+
+      <item> pos </item>
+
+      <item> CAUC </item>
+      <item> KIRC </item>
+      <item> BIOT </item>
+
+      <item> XIT </item>
+      <item> XC </item>
+      <item> XT </item>
+      <item> YT </item>
+      <item> NT </item>
+      <item> NF </item>
+
+      <item> GRO </item>
+      <item> GROU </item>
+      <item> GROUP </item>
+      <item> GROUPE </item>
+      <item> GROUPES </item>
+
+      <item> MODIFIE </item>
+      <item> MAILLE </item>
+      <item> ELEMENT </item>
+      <item> ELEMENTS </item>
+      <item> NOEUDS </item>
+
+      <item> BEHA </item>
+      <item> DISTRIB </item>
+
+      <item> MECA </item>
+      <item> VISC </item>
+      <item> CIBL </item>
+      <item> PLAS </item>
+      <item> IA16 </item>
+      <item> KINI </item>
+      <item> PRCR </item>
+      <item> PRCK </item>
+      <item> PRCV </item>
+      <item> itma </item>
+      <item> HMIN </item>
+      <item> HMAX </item>
+      <item> DTI0 </item>
+      <item> iref </item>
+      <item> vini </item>
+      <item> impl </item>
+      <item> npas </item>
+      <item> t1 </item>
+      <item> t2 </item>
+      <item> beta </item>
+      <item> gama </item>
+
+      <item> ARCHIVE </item>
+      <item> STRUC </item>
+      <item> structure </item>
+      <item> styp </item>
+
+
+      <item> STYPE </item>
+      <item> NAME </item>
+
+      <item> CHA </item>
+      <item> PHP </item>
+
+      <item> gp </item>
+      <item> hing </item>
+      <item> axe1 </item>
+      <item> sphe </item>
+      <item> CYLI </item>
+      <item> SPRI </item>
+      <item> DIST </item>
+      <item> rigi </item>
+      <item> mass </item>
+      <item> spri </item>
+      <item> kr </item>
+      <item> c </item>
+      <item> l </item>
+
+      <item> fy </item>
+
+<!--       <item> mode </item> -->
+      <item> echo </item>
+      <item> m </item>
+
+      <item> ry </item>
+      <item> rx </item>
+
+    </list>
+    
+    
+     <!-- Reserved keywords in Octave -->
+    <list name="keywords">
+      <item> all_va_args </item>
+      <item> break </item>
+      <item> varargout </item>
+    </list>
+    
+    <contexts>
+
+      <context name="_normal" attribute="Normal Text" lineEndContext="#stay">
+
+        <!-- Code folding -->
+        <!--TODO: with this implementation, code folding will close a block also with a wrong
+        end*: for istance, for can be closed by endif. This is done because the catchall end 
+        keyword is widely used to close a number of blocks (including if and for).
+        If you have an improvement, please contribute it!-->
+        
+       
+        <RegExpr context="#stay" attribute="Keyword" String="\b(POINT)\b" beginRegion="block" />
+        <RegExpr context="#stay" attribute="Keyword" String="\b(CLM)\b" beginRegion="block" />
+        <RegExpr context="#stay" attribute="Keyword" String="\b(GEN)\b" beginRegion="block" />
+        <RegExpr context="#stay" attribute="Keyword" String="\b(SAM)\b" beginRegion="block" />
+        <RegExpr context="#stay" attribute="Keyword" String="\b(DES)\b" beginRegion="block" />
+        
+        <RegExpr context="#stay" attribute="Keyword" String="!end" endRegion="block" />
+        <RegExpr context="#stay" attribute="Keyword" String="\b(endfunction)\b" endRegion="block" />
+        
+        <!-- Look-ahead for adjoint ' after variable, number literal, closing braces and .' -->
+        <RegExpr context="_adjoint" attribute="Variable" String="[a-zA-Z]\w*(?=')" />
+        <RegExpr context="_adjoint" attribute="Number" String="(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?[ij]?(?=')" />
+        <RegExpr context="_adjoint" attribute="Delimiter" String="[\)\]}](?=')" />
+        <RegExpr context="_adjoint" attribute="Operator" String="\.'(?=')" />
+
+        <!-- If ' is not the adjoint operator, it starts a string or an unterminated string;
+        strings can be also with ", and accept the respective delimiter in them either
+        by doubling it ('', "") or by escaping it (\', \") -->
+        <RegExpr context="#stay" attribute="String" String="'([^'\\]|''|\\'|\\[^'])*'(?=[^']|$)" />
+        <RegExpr context="#stay" attribute="Incomplete String" String="'([^']|''|\\')*" />
+        <RegExpr context="#stay" attribute="String" String="&quot;([^&quot;\\]|&quot;&quot;|\\&quot;|\\[^&quot;])*&quot;(?=[^&quot;]|$)" />
+        <RegExpr context="#stay" attribute="Incomplete String" String="&quot;([^&quot;]|&quot;&quot;|\\&quot;)*" />
+        
+        <!-- Handling of keywords, comments, functions, identifiers, numbers and braces -->
+        <keyword context="#stay" attribute="Keyword"    String="keywords" />
+        <keyword context="#stay" attribute="opciones"   String="opciones" />
+        <keyword context="#stay" attribute="comandos"   String="comandos" />
+        <keyword context="#stay" attribute="parametros" String="parametros"/>
+        <keyword context="#stay" attribute="comaltniv" String="comaltniv" />
+        <RegExpr context="#stay" attribute="Comment" String="[!].*$" />
+        <RegExpr context="#stay" attribute="Variable" String="[a-zA-Z]\w*" />
+        <RegExpr context="#stay" attribute="Number" String="(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?[ij]?" />
+        <AnyChar context="#stay" attribute="Delimiter" String="()[]{}"/>
+              
+        <!-- Three- and two-character operators -->
+        <StringDetect context="#stay" attribute="Operator" String="..."/>
+        <StringDetect context="#stay" attribute="Operator" String="=="/>
+        <StringDetect context="#stay" attribute="Operator" String="~="/>
+        <StringDetect context="#stay" attribute="Operator" String="!="/>
+        <StringDetect context="#stay" attribute="Operator" String="&lt;="/>
+        <StringDetect context="#stay" attribute="Operator" String="&gt;="/>
+        <StringDetect context="#stay" attribute="Operator" String="&lt;&gt;"/>
+        <StringDetect context="#stay" attribute="Operator" String="&amp;&amp;"/>
+        <StringDetect context="#stay" attribute="Operator" String="||"/>
+        <StringDetect context="#stay" attribute="Operator" String="++"/>
+        <StringDetect context="#stay" attribute="Operator" String="--"/>
+        <StringDetect context="#stay" attribute="Operator" String="**"/>
+        <StringDetect context="#stay" attribute="Operator" String=".*"/>
+        <StringDetect context="#stay" attribute="Operator" String=".**"/>
+        <StringDetect context="#stay" attribute="Operator" String=".^"/>
+        <StringDetect context="#stay" attribute="Operator" String="./"/>
+        <StringDetect context="#stay" attribute="Operator" String=".'"/>
+
+        <!-- Single-character operators -->
+        <AnyChar context="#stay" attribute="Operator" String="!&quot;%(*+,/;=>[]|~#&amp;)-:&lt;&gt;\^"/>
+        
+      </context>
+
+
+      <!--Context entered after encountering an ' adjoint operator -->
+      <context name="_adjoint" attribute="Operator" lineEndContext="#pop">
+        <RegExpr context="#pop" attribute="Operator" String="'+" />
+      </context>
+
+
+    </contexts>
+
+    <itemDatas>
+     
+      <itemData name="Normal Text" defStyleNum="dsNormal" />
+      <itemData name="comaltniv"   defStyleNum="dsFunction" color="#000099" selColor="#009900" bold="1" italic="1" />
+      <itemData name="comandos"    defStyleNum="dsFunction" color="#0000ff" selColor="#00ff00" bold="1" />
+      <itemData name="opciones"    defStyleNum="dsFunction" color="#009900" />
+      <itemData name="parametros"  defStyleNum="dsFunction" color="#b28c00" />
+      <itemData name="Variable" defStyleNum="dsNormal" />
+      <itemData name="Operator" defStyleNum="dsNormal"/>
+      <!-- <itemData name="Number" defStyleNum="dsFloat" /> -->
+      <itemData name="Delimiter" defStyleNum="dsNormal" />
+      <itemData name="String" defStyleNum="dsString" color="#b20000"/>
+      <itemData name="String Char"  defStyleNum="dsChar"/>
+      <itemData name="Incomplete String" defStyleNum="dsChar" color="#a020f0"/>
+      <itemData name="Keyword"  defStyleNum="dsFunction" color="#0000ff" selColor="#00ff00" bold="1" />
+      <itemData name="Comment" defStyleNum="dsComment" color="#009900"/>
+      
+    </itemDatas>
+
+  </highlighting>
+
+  <general>
+    <comments>
+      <comment name="singleLine" start="!" />
+<!--       <comment name="singleLine" start="#" /> -->
+    </comments>
+    <keywords casesensitive="0"/>
+  </general>
+
+</language>
+<!-- kate: space-indent on; indent-width 2; replace-tabs on; -->
